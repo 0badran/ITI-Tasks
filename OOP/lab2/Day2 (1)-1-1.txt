@@ -1,0 +1,31 @@
+* use functions 
+Loops:
+
+1. Print Multiples of num 4 from 0 to 100 [for loop] مضاعفات الرقم 4   
+
+2. Calculate multiplication of 10 numbers givin by user [for loop].
+ 
+3. Get numbers from user until total reaches 100 [while]  3  50 37 20 
+
+Arrays :
+1- Write a program to get sum of 1 student grades and get average and Greatest num then print message if "Success" or "Fail" 1d, 2d
+2- For 1D array , Try Resize and Delete by Shifting
+
+
+* try to solve
+
+1. Loop and 2D Array:
+Assignment: Matrix Multiplication
+Implement a C# program that multiplies two matrices. Take two 2D arrays as input, perform the multiplication, and display the result. Use nested loops to iterate through the matrices.
+
+2. Loop and Jagged Array:
+Assignment: Find Maximum in Jagged Array
+Create a jagged array (an array of arrays) of integers. Write a C# program to find and display the maximum value in each sub-array. Use nested loops to iterate through the jagged array.
+
+3. Loop, 1D, and 2D Arrays:
+Assignment: Matrix Transposition
+Write a C# program that transposes a given matrix. Take a 2D array as input and produce its transpose as output. Transposing a matrix involves swapping its rows and columns.
+
+4. Loop, 1D, 2D Arrays, and Jagged Array:
+Assignment: Search in Jagged Array
+Create a jagged array of strings where each element is an array of words. Implement a C# program to search for a specific word in the jagged array. Display the indices where the word is found.

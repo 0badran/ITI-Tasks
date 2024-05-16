@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day3</title>
+  </head>
+  <body style="text-align: center">
+    <svg id="drwa" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="80" fill="#ffd699" />
+
+      <circle
+        cx="70"
+        cy="70"
+        r="10"
+        id="0"
+        onmouseover="changeColor(this)"
+        onmouseout="restoreColor(this)"
+      />
+      <circle
+        cx="130"
+        cy="70"
+        r="10"
+        id="1"
+        onmouseover="changeColor(this)"
+        onmouseout="restoreColor(this)"
+      />
+
+      <ellipse
+        cx="100"
+        cy="100"
+        rx="5"
+        ry="10"
+        id="2"
+        onmouseover="changeColor(this)"
+        onmouseout="restoreColor(this)"
+      />
+
+      <ellipse
+        cx="100"
+        cy="130"
+        rx="25"
+        ry="15"
+        id="3"
+        onmouseover="changeColor(this)"
+        onmouseout="restoreColor(this)"
+      />
+
+      <text id="text" font-size="20"></text>
+    </svg>
+    <hr />
+    <canvas id="canva" width="120" height="120" onmouseover="happyFase();" onmouseout="sadFase();">
+      Browser not support canvas
+    </canvas>
+    <hr />
+    <button onclick="getLocation()">Go to Your Location</button>
+    <p id="msg"></p>
+  </body>
+  <script src="./main.js"></script>
+</html>

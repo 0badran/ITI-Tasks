@@ -1,0 +1,76 @@
+<form #addProForm="ngForm" (ngSubmit)="addNewProduct()">
+  <div class="form-group">
+    <input type="text" hidden name="id" >
+  </div>
+  <div class="form-group my-3">
+    <label for="name">Product Name:</label>
+    <input type="text" #nameInput="ngModel" [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}" required pattern="[a-zA-Z0-9]{4,15}"
+      class="form-control" id="name" name="name">
+  </div>
+  @if(nameInput.touched)
+  {
+  @if(nameInput.errors?.['required'])
+  {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Name is required
+  </div>
+  }@if (nameInput.errors?.['pattern']) {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Name must between 4-15 characters
+  </div>
+  }
+  }
+
+  <div class="form-group my-3">
+    <label for="price">Price:</label>
+    <input type="number" [ngModelOptions]="{standalone: true}" #priceInput="ngModel" [(ngModel)]="product.price" required pattern="[0-9]{1,10}"
+      class="form-control" id="price" name="price">
+  </div>
+  @if(priceInput.touched)
+  {
+  @if(priceInput.errors?.['required'])
+  {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Price is required
+  </div>
+  }@if (priceInput.errors?.['pattern']) {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Price must between 1-10 digits
+  </div>
+  }
+  }
+  <div class="form-group my-3">
+    <label for="quantity">Quantity:</label>
+    <input type="number" [ngModelOptions]="{standalone: true}" #quantity="ngModel" [(ngModel)]="product.quantity" required pattern="[0-9]{1,10}"
+      class="form-control" id="quantity" name="quantity">
+  </div>
+  @if(quantity.touched)
+  {
+  @if(quantity.errors?.['required'])
+  {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Quantity is required
+  </div>
+  }@if (quantity.errors?.['pattern']) {
+  <div class="alert alert-danger" role="alert">
+    <strong>Error!</strong> Quantity must between 1-10 digits
+  </div>
+  }
+  }
+  <div class="form-group my-3">
+    <label for="img">Image:</label>
+    <input type="file" [ngModelOptions]="{standalone: true}" [(ngModel)]="product.imgUrl" class="form-control" id="img">
+  </div>
+  <div class="form-floating my-3">
+    <label for="floatingSelect">Categories</label>
+    <select class="form-select" name="catId" [(ngModel)]="product.catId" id="floatingSelect"
+      aria-label="Floating label select example">
+      <option selected disabled>Open this select menu</option>
+      @for(cat of gategories; track $index)
+      {
+      <option value="{{cat.id}}">{{cat.name}}</option>
+      }
+    </select>
+  </div>
+  <button type="submit" [disabled]="addProForm.invalid" class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,26 @@
+<div class="row row-cols-lg-4 row-cols-md-2">
+    @for (item of products; track item.id)
+    {
+      @if(item.quantity !== 0)
+      {
+        <div class="col mb-4">
+          <div class="card h-100" [class.bg-warning]="item.quantity==1">
+            <img class="card-img-top" src="{{item.imgUrl}}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{item.name}}</h4>
+              <p class="card-text">Quantity: {{item.quantity}}</p>
+              <p class="card-text">Price: {{item.price}}</p>
+              <input type="number" #eleForCount>
+            </div>
+            <div class="card-footer">
+              <!-- <button class="btn btn-primary rounded-0 " (click)="buy(item, eleForCount.value)">Buy</button> -->
+              <!-- <button class="btn btn-info rounded-0  ms-5 px-4" [routerLink]="['/Details',item.id]">Details</button> -->
+              <button class="btn btn-info rounded-0  mx-5" (click)="updateProducte(item.id)">Update</button>
+              <button class="btn btn-danger rounded-0" (click)="deleteProduct(item.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      }
+    }
+</div>
+<app-shopping-cart></app-shopping-cart>

@@ -1,0 +1,39 @@
+<div class="container">
+  <p>Number ID: {{id | processID}}</p>
+  <p>Credit Card: {{creditCard | processCreditCard}}</p>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+      [(ngModel)]="selectedCatId">
+      <option selected disabled>Open this select menu</option>
+      <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+    </select>
+    <label for="floatingSelect">Categories</label>
+    <button class="btn btn-outline-dark my-4" (click)="restCategories()">Show All Categories</button>
+  </div>
+  <app-products [getGetId]="selectedCatId" (onUserClickedBuy)="getItem($event)"
+    (onUserClickedBuy2)="getCount($event)"></app-products>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Product name</th>
+        <th scope="col">Order count</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of recivedItem; track item.id)
+      {
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.orderCount}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.orderCount * item.price}}</td>
+        <td><button class="btn btn-danger rounded-0" (click)="removeItem(item.id)">Remove</button></td>
+      </tr>
+      }
+      <button class="btn btn-warning rounded-0 my-4" (click)="checkOut()">Checkout</button>
+    </tbody>
+  </table>
+</div>

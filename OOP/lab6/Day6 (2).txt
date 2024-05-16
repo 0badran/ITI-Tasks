@@ -1,0 +1,5 @@
+create Square , REctangle , Circle   (data members and CalcArea()) then class Picture has square as Composition , Rec as Aggregation , cir as Assosiation  calcTotalArea() = sqarea + recarea (bouns array of sq &rec) 
+
+
+- shape (dim , CalcArea()), All Classes Inherit from it 
+

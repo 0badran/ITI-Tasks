@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noon Prifle Taps</title>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&family=Noto+Kufi+Arabic:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body class="position-relative">
+
+  <nav class="navbar d-flex justify-content-center align-items-center">
+
+    <div class="container row">
+
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+
+        <button class="btn btn-outline d-md-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-expanded="false" aria-controls="navMenu" id="toggle">
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+
+          <img src="assets/noon-logo-en.svg" alt="Logo" width="90" height="24" class="">
+        </a>
+
+        <h6 class="border-left mt-2 px-2" style="border-left: 1px solid #DDD;">Account</h6>
+      </div>
+
+      <div class="col-lg-5 col-md-3 col-sm-6 col-6">
+        <form class="" role="search">
+          <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+
+        </form>
+      </div>
+
+      <div class="col-lg-5 col-md-6 d-none d-md-block mt-2">
+
+        <ul class=" m-auto d-flex justify-content-center align-items-center">
+
+          <span class="d-block mx-2">
+            العربية
+          </span>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none px-1 nav-link-color nav-li-border fw-bold" href="">Log in<i
+                class="ps-1 fa-regular fa-user"></i></a>
+          </li>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1"
+              href="wishlist.html">Wishlist<i class="ps-1 fa-regular fa-heart position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  6
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </i>
+            </a>
+          </li>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1" href="cart.html">Cart<i
+                class="ps-1 fa-solid fa-cart-shopping position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  6
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- main section -->
+
+  <div class=" hero-section">
+
+    <!-- fixed navBar -->
+    <div class="d-sm-block d-md-none d-lg-none sticky-nav py-2 d-flex justify-content-center align-items-center"
+      style="z-index: 2;">
+
+      <ul class=" me-auto d-flex justify-content-center align-items-center">
+
+        <li class="d-flex">
+          <a class="text-decoration-none px-3 nav-link-color nav-li-border fw-bold" href="index.html">Home<i
+              class="fa-solid fa-house"></i></a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none px-3 nav-link-color nav-li-border fw-bold" href="profile-taps.html">Log in<i
+              class="ps-1 fa-regular fa-user"></i></a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-2"
+            href="wishlist.html">Wishlist<i class="ps-1 fa-regular fa-heart position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                6
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-2" href="cart.html">Cart<i
+              class="ps-1 fa-solid fa-cart-shopping position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                6
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <section class="profile-taps">
+
+      <!-- side menu nav -->
+      <div class="side-menu d-lg-none d-md-none d-sm-block pt-5"  id="sideMenu">
+        <div class="px-3">
+          <div class="welcome d-flex flex-column py-4 bold border-bottom">
+            Hala Ahmed!
+            <span class="grey-small">Mail@mail.com</span>
+          </div>
+
+          <!-- taps -->
+
+          <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+            <!-- qr code -->
+            <button class="nav-link sideNavLink active" id="v-pills-tab1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab1"
+              type="button" role="tab" aria-controls="v-pills-tab1" aria-selected="true">
+              <i class="fa-solid fa-qrcode"></i>
+              <span style="padding-left: 7px;">Qr Code</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- wishlist link -->
+            <a href="Noon wishlist/index.html" class="nav-link text-decoration-none text-black sideNavLink">
+              <i class="fa-solid fa-heart"></i>
+              <span style="padding-left: 7px;">Wishlist</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </a>
+
+            <!-- orders -->
+            <button class="nav-link sideNavLink" id="v-pills-tab2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab2"
+              type="button" role="tab" aria-controls="v-pills-tab2" aria-selected="false">
+              <i class="fa-solid fa-rectangle-list"></i>
+              <span style="padding-left: 7px;">Orders</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- returns -->
+            <button class="nav-link sideNavLink" id="v-pills-tab3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab3"
+              type="button" role="tab" aria-controls="v-pills-tab3" aria-selected="false">
+              <i class="fa-solid fa-rotate-left"></i>
+              <span style="padding-left: 7px;">Returns</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- adresses -->
+            <button class="nav-link sideNavLink" id="v-pills-tab4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab4"
+              type="button" role="tab" aria-controls="v-pills-tab4" aria-selected="false">
+              <i class="fa-solid fa-location-dot"></i>
+              <span style="padding-left: 7px;">Adresses</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- payments -->
+            <button class="nav-link sideNavLink" id="v-pills-tab5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab5"
+              type="button" role="tab" aria-controls="v-pills-tab5" aria-selected="false">
+              <i class="fa-brands fa-paypal"></i>
+              <span style="padding-left: 7px;">Payments</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- warranty -->
+            <button class="nav-link sideNavLink" id="v-pills-tab6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab6"
+              type="button" role="tab" aria-controls="v-pills-tab6" aria-selected="false">
+              <i class="fa-solid fa-toolbox"></i>
+              <span style="padding-left: 7px;">Warranty</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- profile -->
+            <button class="nav-link sideNavLink" id="v-pills-tab7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab7"
+              type="button" role="tab" aria-controls="v-pills-tab6" aria-selected="false">
+              <i class="fa-solid fa-user"></i>
+              <span style="padding-left: 7px;">Profile</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- notification -->
+            <button class="nav-link sideNavLink" id="v-pills-tab8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab8"
+              type="button" role="tab" aria-controls="v-pills-tab8" aria-selected="false">
+              <i class="fa-regular fa-bell"></i>
+              <span style="padding-left: 7px;">Notifications</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+            <!-- security -->
+            <button class="nav-link sideNavLink" id="v-pills-tab9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab9"
+              type="button" role="tab" aria-controls="v-pills-tab9" aria-selected="false">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span style="padding-left: 7px;">Security Setting</span>
+              <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="px-3 d-none d-md-block col-md-4">
+
+            <div class="welcome d-flex flex-column py-4 bold border-bottom">
+              Hala Ahmed!
+              <span class="grey-small">Mail@mail.com</span>
+            </div>
+
+            <!-- taps -->
+
+            <div class="nav flex-column nav-pills mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <button class="nav-link active" id="v-pills-tab1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab1"
+                type="button" role="tab" aria-controls="v-pills-tab1" aria-selected="true">
+                <i class="fa-solid fa-qrcode"></i>
+                <span style="padding-left: 7px;">Qr Code</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- wishlist link -->
+              <a href="wishlist.html" class="nav-link text-decoration-none text-black ">
+                <i class="fa-solid fa-heart"></i>
+                <span style="padding-left: 7px;">Wishlist</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </a>
+
+              <!-- orders -->
+              <button class="nav-link" id="v-pills-tab2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab2"
+                type="button" role="tab" aria-controls="v-pills-tab2" aria-selected="false">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <span style="padding-left: 7px;">Orders</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- returns -->
+              <button class="nav-link" id="v-pills-tab3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab3"
+                type="button" role="tab" aria-controls="v-pills-tab3" aria-selected="false">
+                <i class="fa-solid fa-rotate-left"></i>
+                <span style="padding-left: 7px;">Returns</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- adresses -->
+              <button class="nav-link" id="v-pills-tab4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab4"
+                type="button" role="tab" aria-controls="v-pills-tab4" aria-selected="false">
+                <i class="fa-solid fa-location-dot"></i>
+                <span style="padding-left: 7px;">Adresses</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- payments -->
+              <button class="nav-link" id="v-pills-tab5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab5"
+                type="button" role="tab" aria-controls="v-pills-tab5" aria-selected="false">
+                <i class="fa-brands fa-paypal"></i>
+                <span style="padding-left: 7px;">Payments</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- warranty -->
+              <button class="nav-link" id="v-pills-tab6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab6"
+                type="button" role="tab" aria-controls="v-pills-tab6" aria-selected="false">
+                <i class="fa-solid fa-toolbox"></i>
+                <span style="padding-left: 7px;">Warranty</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- profile -->
+              <button class="nav-link" id="v-pills-tab7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab7"
+                type="button" role="tab" aria-controls="v-pills-tab6" aria-selected="false">
+                <i class="fa-solid fa-user"></i>
+                <span style="padding-left: 7px;">Profile</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- notification -->
+              <button class="nav-link" id="v-pills-tab8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab8"
+                type="button" role="tab" aria-controls="v-pills-tab8" aria-selected="false">
+                <i class="fa-regular fa-bell"></i>
+                <span style="padding-left: 7px;">Notifications</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+              <!-- security -->
+              <button class="nav-link" id="v-pills-tab9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tab9"
+                type="button" role="tab" aria-controls="v-pills-tab9" aria-selected="false">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span style="padding-left: 7px;">Security Setting</span>
+                <i class="fa-solid fa-arrow-right arrow" style="margin-left: 20px;"></i>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- taps content -->
+          <div class="pt-5 px-5 col-md-8 col-sm-12">
+
+            <!-- qr code -->
+            <div class="tab-content" id="v-pills-tabContent">
+              <!-- qr code -->
+              <div class="tab-pane fade show active" id="v-pills-tab1" role="tabpanel"
+                aria-labelledby="v-pills-tab1-tab">
+
+                <h3 class="bold">
+                  QR Code
+                </h3>
+                <p>Use the noon QR code to pickup your orders at collection points.</p>
+
+                <div class="qr-field flex-center py-4" style="background-color: #DDD;">
+                  <img src="assets/qr.jpeg" alt="" width="100" height="auto">
+                </div>
+              </div>
+
+              <!-- orders -->
+              <div class="tab-pane fade" id="v-pills-tab2" role="tabpanel" aria-labelledby="v-pills-tab2-tab">
+                <h3 class="bold">
+                  Orders
+                </h3>
+                <p>View the delivery status for items and your order history</p>
+
+                <div class="">
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Find items" aria-label="Search"
+                      aria-describedby="basic-addon2">
+                  </div>
+
+                  <!-- Select Element -->
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="selectOptions">
+                      <option selected>Choose...</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+
+                  <div class="flex-center flex-column">
+                    <img src="assets/orders.svg" alt="">
+                    <p>No items Found</p>
+                    <p>We couldn't find any items that matched your search in the given time period
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- returns -->
+              <div class="tab-pane fade" id="v-pills-tab3" role="tabpanel" aria-labelledby="v-pills-tab3-tab">
+                <div class="flex-center flex-column">
+                  <img src="assets/orders.svg" alt="">
+                  <p>No Retruns Requested</p>
+                  <p>We couldn't find any items that matched your search in the given time period
+                  </p>
+                  <button class="btn btn-primary">
+                    Create New Return
+                  </button>
+                </div>
+              </div>
+
+              <!-- adrresses -->
+              <div class="tab-pane fade" id="v-pills-tab4" role="tabpanel" aria-labelledby="v-pills-tab4-tab">
+
+                <h3 class="bold">
+                  Adresses
+                </h3>
+                <p>Manage your saved addresses for fast and easy checkout across our marketplaces.</p>
+
+                <button class="btn btn-primary">Add New Adresse</button>
+                <div class="qr-field flex-center py-4 flex-column">
+                  <p>No Adresses Found</p>
+                  <img src="assets/orders.svg" alt="" width="50%" height="auto">
+                </div>
+              </div>
+
+              <!-- Payments -->
+              <div class="tab-pane fade" id="v-pills-tab5" role="tabpanel" aria-labelledby="v-pills-tab5-tab">
+
+                <div class="qr-field flex-center py-4 flex-column">
+
+                  <img src="assets/orders.svg" alt="" width="50%" height="auto">
+                  <p>No Saved Cards</p>
+                  <p class="text-center">Cards saved during the checkout process will display here. We use encrypted
+                    methods to store your
+                    details securely
+                  </p>
+                </div>
+              </div>
+
+              <!-- warranty -->
+              <div class="tab-pane fade" id="v-pills-tab6" role="tabpanel" aria-labelledby="v-pills-tab6-tab">
+
+                <div class="qr-field flex-center py-4 flex-column">
+
+                  <img src="assets/orders.svg" alt="" width="50%" height="auto">
+                  <p>No claims requested
+                  </p>
+                  <p class="text-center">No claims requested
+                  </p>
+                  <button class="btn btn-primary">Create New Claim</button>
+                </div>
+              </div>
+
+              <!-- profile -->
+              <div class="tab-pane fade" id="v-pills-tab7" role="tabpanel" aria-labelledby="v-pills-tab7-tab">
+
+                <div class="profile-banner" style="width: 100%; height: 100px; background-color: #f1f1f1;">
+                </div>
+
+
+                <div class="qr-field py-4 flex-column my-3 px-3" style="background-color: #f1f1f1;">
+
+                  <div class="form-header d-flex justify-content-left align-items-left">
+                    <h4 class="bold ">Profile info</h4>
+                  </div>
+
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                          aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">State</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit" disabled>Update Profile</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+              <!-- notifications -->
+              <div class="tab-pane fade" id="v-pills-tab8" role="tabpanel" aria-labelledby="v-pills-tab8-tab">
+
+                <h3 class="bold">Notifications</h3>
+
+                <div class="profile-banner p-3" style="width: 100%; height: auto; background-color: #f1f1f1;">
+                  <h5 class="bold">Receive Communications In
+                  </h5>
+
+                  <div class="mb-2">
+                    <label for="languageSelect" class="form-label">Language</label>
+                    <select class="form-select" id="languageSelect">
+                      <option value="english">English</option>
+                      <option value="spanish">Arabic</option>
+                    </select>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- security setting -->
+              <div class="tab-pane fade" id="v-pills-tab9" role="tabpanel" aria-labelledby="v-pills-tab9-tab">
+
+                <h3 class="bold">Security Settings</h3>
+
+                <div class="profile-banner p-3" style="width: 100%; height: auto; background-color: #f1f1f1;">
+                  <h5 class="bold">Security</h5>
+                  <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <div class="d-flex align-items-center">
+                      <input type="password" class="form-control me-2" id="passwordInput" placeholder="*********"
+                        disabled>
+                      <button class="btn btn-primary" type="button" id="changePasswordBtn">Change</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-banner p-3 mt-3" style="width: 100%; height: auto; background-color: #f1f1f1;">
+                  <h5 class="bold">Account Deletetion</h5>
+                  <a href="" class="nav-link text-danger">Delete your Account</a>
+                  <p>We are sad to see you go, but hope to see you again!</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </div>
+
+
+
+
+  <footer>
+    <div class="support flex-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-sm-12 col-md-auto text-center text-md-start">
+            <h4>We're Always Here To Help</h4>
+            <p>Reach out to us through any of these support channels</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-sm-12 col-sm-12 col-md-auto text-center text-md-start">
+            <div class="container-fluid">
+
+              <div class="row">
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-solid fa-info"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Help Center</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Email Support</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Phone Support</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- apps -->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-6">
+          <p>© 2024 noon. All rights reserved
+          </p>
+        </div>
+        <div class="col-8 col-sm-6 d-flex justify-content-center align-items-center">
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;">
+            Help center articles
+          </a>
+
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;">
+            Waranty policy
+          </a>
+
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;"> 
+            Return policy
+          </a>
+
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;">
+            Terms of use
+          </a>
+
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;">
+            Terms of sale
+          </a>
+
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover grey-small" href="#" style="margin-right: 10px;">
+            Privacy policy
+          </a>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+
+
+
+
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

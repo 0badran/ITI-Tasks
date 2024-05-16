@@ -1,0 +1,71 @@
+<form [formGroup]="userRegisterForm">
+  <!-- <h1>{{userRegisterForm.value|json}}</h1> -->
+  <div class="form-group my-3">
+    <label for="name">Name: </label>
+    <input type="text" formControlName="name" class="form-control" id="name">
+  </div>
+  @if(getName?.touched)
+  {
+  @if(getName?.errors?.["required"])
+  {
+  <div class="my-4">
+    <span class="alert alert-danger">Name is required</span>
+  </div>
+  }
+  @else if(getName?.errors?.["pattern"])
+  {
+  <div class="my-4">
+    <span class="alert alert-danger">Name must have 3 characters or more</span>
+  </div>
+  }
+  }
+
+  <div class="form-group my-3">
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" class="form-control" id="emali">
+  </div>
+  @if(getEmail?.touched)
+  {
+  @if(getEmail?.errors?.["required"])
+  {
+  <div class="my-4">
+    <span class="alert alert-danger">Email is required</span>
+  </div>
+
+  }
+  @else if(getEmail?.errors?.["email"])
+  {
+  <div class="my-4">
+    <span class="alert alert-danger">Email invalid</span>
+  </div>
+  }
+  }
+  <div class="form-group my-3">
+    <label for="password">Password:</label>
+    <input type="text" formControlName="password" class="form-control" id="password">
+  </div>
+  <div formGroupName="address">
+    <div class="form-group my-3">
+      <label for="city">City:</label>
+      <input type="text" formControlName="city" class="form-control" id="password">
+    </div>
+    <div class="form-group my-3">
+      <label for="street">Street Number:</label>
+      <input type="text" formControlName="strNum" class="form-control" id="street">
+    </div>
+  </div>
+  <ng-container formArrayName="phones">
+    <div class="form-group my-3">
+      <label for="phone">Phones:</label>
+      @for(phone of phoneArray.controls; track $index)
+      {
+      <div class="mt-3">
+        <input type="text" [formControlName]="$index" class="form-control d-inline" id="phone">
+        <button class="btn btn-danger px-3 rounded-0" (click)="removePhoneField($index)">-</button>
+      </div>
+      }
+      <button class="btn btn-success px-4 mt-3 rounded-0" (click)="addPhoneField()">+</button>
+    </div>
+  </ng-container>
+  <button type="submit" [disabled]="userRegisterForm.invalid" class="btn btn-secondary rounded-0">Sign in</button>
+</form>

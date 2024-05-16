@@ -1,0 +1,38 @@
+.hoverit {
+  position: relative;
+  display: inline-block;
+}
+img[alt="logo"]{
+  width: 50px;
+}
+.text-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+  background-color: #fff;
+  padding: 20px;
+  opacity: 0;
+}
+.hoverit:hover .text-card {
+  opacity: 1;
+}
+.click-cart {
+  opacity: 0.5;
+  color: black;
+  transition: opacity 0.5s ease-in-out;
+}
+.click-cart:hover {
+  font-size: 18px;
+  opacity: 1;
+  color: gray;
+}
+footer > *{
+  color: #fff;
+}
+
+#content2{
+  margin: 200px;
+  text-align: left;
+}

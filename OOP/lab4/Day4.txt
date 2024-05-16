@@ -1,0 +1,21 @@
+class Student Has Member variable 
+(
+-Data Member 
+	name > 6 char
+	age > 20 years old 
+	grade (bouns array of grade)
+      username (name+age) no set only get
+      Password set > 8   (bouns regular Expression)
+- constructors  
+
+- bool ForgetPassword (username , ref pass)  check username if valid return true And new random password and set it your Password Variable , else return false
+
+- print 
+     
+)
+
+Account Class:
+
+Create an Account class with properties such as AccountNumber, Balance, Owner, and AccountType.
+Encapsulate the properties to ensure that they can only be accessed and modified through public methods.
+Implement methods for deposit, withdrawal, and checking the balance.

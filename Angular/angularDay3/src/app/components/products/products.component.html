@@ -1,0 +1,16 @@
+<div class="row row-cols-lg-4 row-cols-md-2">
+  <div *ngFor="let item of products" class="col my-4"
+    [style.display]="getGetId==0 || item.catId == getGetId?'block':'none'">
+    <div class="card" style="box-shadow: 3px 3px;" *ngIf="!(item.quantity<=0)"
+      [class.bg-warning]="item.quantity==1">
+      <img [src]="item.imgUrl" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">Quantity is: {{item.quantity}}</p>
+        <p class="card-text">Price is: {{item.price}}</p>
+        <input type="number" #eleForCount>
+      </div>
+      <button class="btn btn-primary rounded-0" (click)="buy(item, eleForCount.value)">Buy</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+@use "basic" as main;
+
+.danger {
+  @extend %share-proparty;
+  $bg-color: #f33;
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 4);
+  }
+}
+.warning {
+  @extend %share-proparty;
+  $bg-color: #fd3;
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 4);
+  }
+}
+
+.primery {
+  @extend %share-proparty;
+  $bg-color: #07f;
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 4);
+  }
+}
+
+div {
+  @include main.div-mixing;
+}
+
+.random {
+  color: main.random-color();
+}

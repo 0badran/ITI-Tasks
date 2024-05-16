@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+%share-proparty {
+  padding: 20px;
+  border-radius: 5px;
+  color: #ddd;
+}
+
+@function random-color() {
+  @return rgb(random(255), random(255), random(255));
+}
+
+
+@mixin div-mixing {
+  @keyframes div-animation {
+    0% {
+      background-color: gray;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      background-color: yellow;
+      left: 200px;
+      top: 0px;
+    }
+    50% {
+      background-color: blue;
+      left: 200px;
+      top: 200px;
+    }
+    75% {
+      background-color: green;
+      left: 0px;
+      top: 200px;
+    }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px;
+    }
+  }
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: div-animation;
+  animation-duration: 4s;
+}

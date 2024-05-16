@@ -1,0 +1,10 @@
+header{
+  background-image: url("/cover.jpg");
+  height: 600px;
+}
+#text-nav{
+  display: inline-block;
+  padding:150px;
+  text-align: center;
+  color:#fff;
+}

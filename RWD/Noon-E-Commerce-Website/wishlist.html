@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noon Wishlist</title>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/wishlist-style.css" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&family=Noto+Kufi+Arabic:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar d-flex justify-content-center align-items-center">
+
+    <div class="container-fluid row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-5">
+        <a class="navbar-brand" href="#">
+          <img src="assets/noon-logo-en.svg" alt="Logo" width="90" height="24" class="">
+
+          <img src="assets/Flag_of_Egypt.svg.png" alt="Logo" width="50" height="auto" class="ml-4">
+        </a>
+      </div>
+
+      <div class="col-lg-5 col-md-3 col-sm-8 col-7">
+        <form class="" role="search">
+          <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+
+        </form>
+      </div>
+
+      <div class="col-lg-5 col-md-6 d-none d-md-block mt-2">
+
+        <ul class=" m-auto d-flex justify-content-center align-items-center">
+
+          <span class="d-block mx-2">
+            العربية
+          </span>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none px-1 nav-link-color nav-li-border fw-bold" href="">Log in<i
+                class="ps-1 fa-regular fa-user"></i></a>
+          </li>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1" href="wishlist.html">Wishlist<i
+                class="ps-1 fa-regular fa-heart position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  6
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </i>
+            </a>
+          </li>
+
+          <li class="d-flex left-border">
+            <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-1" href="cart.html">Cart<i
+                class="ps-1 fa-solid fa-cart-shopping position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  6
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- items nav links -->
+  <div class="nav-links d-none d-md-block">
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-2 d-flex justify-content-left align-items-center py-2"
+          style="border-right: 1px solid #DDD; font-size: .9vw; font-weight: bold;">
+          <a href="" class="nav-link">
+            ALL PRODUCTS
+            <span style="margin-left: 10px;">
+              <i class="fa-solid fa-sort-down"></i>
+            </span>
+
+          </a>
+        </div>
+
+        <div class="col-10 d-flex justify-content-left align-items-center main-links">
+          <a href="#" class="nav-link item-link p-2">Electronics</a>
+          <a href="#" class="nav-link p-2">Mobile</a>
+          <a href="#" class="nav-link  p-2">Men</a>
+          <a href="#" class="nav-link p-2">Women</a>
+          <a href="#" class="nav-link p-2">Home</a>
+          <a href="#" class="nav-link p-2">Beauy and Healthy</a>
+          <a href="#" class="nav-link p-2">Baby and Toys</a>
+          <a href="#" class="nav-link p-2">Super Market</a>
+          <a href="#" class="nav-link p-2">Sell on Noon</a>
+          <a href="#" class="nav-link p-2" style="color: red;">Deals</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- main section -->
+
+  <div class=" hero-section">
+
+    <!-- fixed navBar -->
+    <div class="d-sm-block d-md-none d-lg-none sticky-nav py-2 d-flex justify-content-center align-items-center" style="z-index: 1;">
+
+      <ul class=" me-auto d-flex justify-content-center align-items-center">
+
+        <li class="d-flex">
+          <a class="text-decoration-none px-3 nav-link-color nav-li-border fw-bold" href="index.html">Home<i
+              class="fa-solid fa-house"></i></a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none px-3 nav-link-color nav-li-border fw-bold" href="profile-taps.html">Log in<i
+              class="ps-1 fa-regular fa-user"></i></a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-2" href="wishlist.html">Wishlist<i
+              class="ps-1 fa-regular fa-heart position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                6
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </a>
+        </li>
+
+        <li class="d-flex left-border">
+          <a class="text-decoration-none nav-link-color nav-li-border fw-bold px-2" href="cart.html">Cart<i
+              class="ps-1 fa-solid fa-cart-shopping position-relative">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                6
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <!-- Wishlist container -->
+    <section class="wishlist py-2">
+      <div class="container">
+
+        <div class="create d-flex justify-content-between align-items-center border-bottom" style="height: 100px;">
+            <h2>Wishlist</h2>
+            <button class="btn btn-primary">Create New Wishlist</button>
+        </div>
+
+        <div class="row">
+          <!-- lists links -->
+          <div class="col-md-4 border-right p-3">
+            <div class="list-link flex-center flex-column align-items-start p-2">
+              <a href="" class="link-offset-2 link-underline link-underline-opacity-0">
+                <h6>Default
+                  <span class="badge text-bg-primary">Default</span>
+                </h6>
+              </a>
+
+              <span class="items-count">6 Items <i class="fa-solid fa-bag-shopping"></i></span>
+            </div>
+          </div>
+
+          <!-- items -->
+          <div class="col-md-8">
+
+            <div class="setting d-flex justify-content-between align-items-center border-bottom">
+              <div class="list-name py-3">
+                <h5 class="bold">Default 
+                  <span class="badge text-bg-primary">Default</span>
+                </h5>
+              </div>
+
+              <div class="setting-btns">
+                <button class="btn btn-outline-dark round-radius">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  Share</button>
+                <button class="btn btn-outline-dark round-radius">
+                  <i class="fa-solid fa-ellipsis"></i>
+                   More</button>
+              </div>
+            </div>
+
+            <div class="list-items-cards my-3">
+              
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            Copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            Copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            Copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            Copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-img pt-2">
+                      <img src="assets/screen-card.png" class="card-img-top d-block m-auto" alt="..." style="width: 90%; background-color: #EBECF0;">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">22 inch Screen Gaming Monitor with IPS Panel Anti Glare</p>
+                      <div class="price">
+                        <span class="bold">6999</span> <span>EGP</span>
+                      </div>
+                      <div class="stock">
+                        <span>
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          only 3 items left in stock</span>
+                      </div>
+                      <div class="mt-1"><img src="assets/express.svg" alt="" width="30%"></div>
+                    </div>
+                    <div class="footer px-4 py-2 d-flex justify-content-between"> 
+
+                      <button class="btn btn-primary"">Add 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>  
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Move to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-copy"></i>
+                            Copy to another wishlist
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            Delete
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+
+
+
+
+  <footer>
+    <div class="support flex-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-sm-12 col-md-auto text-center text-md-start">
+            <h4>We're Always Here To Help</h4>
+            <p>Reach out to us through any of these support channels</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-sm-12 col-sm-12 col-md-auto text-center text-md-start">
+            <div class="container-fluid">
+
+              <div class="row">
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-solid fa-info"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Help Center</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Email Support</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+                <div class="help-link col-4 d-flex row">
+                  <div class="icon col-4 flex-center">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="site-link col-8 d-flex justify-content-center align-items-left flex-column">
+                    <span>Phone Support</span>
+                    <a href="" class="nav-link">
+                      help.noon.com</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer links  -->
+    <div class="container all-links d-none d-md-block my-5">
+      <div class="row">
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">ELECTRONICS</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">FASHION</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">HOME AND KITCHEN</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">BEAUTY</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">KIDS, BABY & TOYS</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2 flex-center flex-column">
+          <h6 class="text-uppercase">TOP BRANDS</h6>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="nav-link" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- apps -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p>help</p>
+        </div>
+        <div class="col-6">
+          <a href="">link1</a>
+          <a href="">link2</a>
+          <a href="">link3</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

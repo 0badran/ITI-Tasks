@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* global rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grey-small {
+    font-weight: 100;
+    font-size: 1vw;
+    color: #cfcccc;
+}
+.round-radius {
+    border-radius: 20px;
+}
+
+.r-font {
+    font-size: 1vw;
+}
+
+/* nav bar additioal styles */
+.navbar {
+    background-color: #feee00;
+    height: 60px;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+}
+
+.sticky-nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #feee00;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+}
+
+.banners {
+    height: 900px;
+}
+
+.left-border {
+    border-left: 1px solid #b9b2b2;
+}
+
+/* make the menus visible when hovering on an item */
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+/* nav links */
+.nav-links {
+    background-color: #F7f7FA;
+    height: auto;
+    overflow: hidden;
+}
+
+.nav-links .main-links a {
+    font-size: .9vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-links .main-links a:hover {
+    background-color: #FFF;
+}
+
+
+/* START cart styles */
+
+.summary-col {
+    position: relative;
+}
+
+.cart {
+    background-color: #F7f7FA;
+    height: auto;
+}
+
+.summary {  
+    background-color: #FFF;
+    position: sticky ;
+    top: 10px;
+}
+
+.cart-item {
+    background-color: #FFF;
+}
+
+/* END cart styles */
+
+
+
+/* Start profile styles */
+.nav-link.active {
+    background-color: transparent !important; 
+    font-weight: bold;
+    text-decoration: underline;
+    color: black !important 
+  }
+
+
+  .nav .nav-link {
+    color: black;
+    transition: .5s;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .nav .nav-link:hover {
+    opacity: .8;
+  }
+
+  .arrow {
+    visibility: hidden;
+    text-decoration: none;
+  }
+
+  .nav .nav-link:hover .arrow {
+    visibility: visible;
+  }
+
+
+
+  /* side nav styles */
+  .profile-taps {
+    position: relative;
+  }
+
+
+  #sideMenu {
+    z-index: 1;
+    width: 250px;
+    position: absolute;
+    left: -250px;
+    height: 90vh; 
+    background-color: #f1f1f1;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sideNavLink {
+    margin-top: 10px;
+  }
+
+/* End profile styles */
+
+
+
+
+/* Start  wishlish styles*/
+.list-link {
+    height: 90px;
+    background-color: #EBECF0;
+    width: 90%;
+}
+/* End  wishlish styles*/
+
+/* foorter styles */
+
+footer .all-links h6 {
+    font-size: 1vw;
+}
+
+footer .support {
+    background-color: #F7f7FA;
+    height: 100px;
+}
+
+footer .support span {
+    font-size: .9vw ;
+}
+footer .support h4 {
+    font-size: 1.7vw ;
+}
+
+footer .support a {
+    font-size: 1vw ;
+}

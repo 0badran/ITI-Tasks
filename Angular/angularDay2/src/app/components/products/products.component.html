@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row my-4">
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example" [(ngModel)]="selectedCatId">
+        <option selected disabled>Open this select menu</option>
+        <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+      </select>
+      <label for="floatingSelect">Categories</label>
+    </div>
+  </div>
+  <!-- ///////////// -->
+  <button class="btn btn-outline-dark" (click)="restCategories()">Show All Categories</button>
+  <!-- /////////////// -->
+  <div class="row row-cols-lg-4 row-cols-md-2">
+    <div *ngFor="let item of products" class="col my-4" [style.display]="selectedCatId==0 || item.catId == selectedCatId?'block':'none'">
+      <div class="card" CardChange bgColor style="box-shadow: 3px 3px;" *ngIf="!(item.quantity==0)" [class.bg-warning]="item.quantity==1">
+        <img [src]="item.imgUrl" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">Quantity is: {{item.quantity}}</p>
+          <p class="card-text">Price is: {{item.price}}</p>
+        </div>
+        <button class="btn btn-primary rounded-0" (click)="buy(item)">Buy</button>
+      </div>
+    </div>
+  </div>
+</div>
+

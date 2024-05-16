@@ -1,0 +1,14 @@
+/mnt/d/ITI-workspace/oop/lab7/bin/Debug/net8.0/lab7
+/mnt/d/ITI-workspace/oop/lab7/bin/Debug/net8.0/lab7.deps.json
+/mnt/d/ITI-workspace/oop/lab7/bin/Debug/net8.0/lab7.runtimeconfig.json
+/mnt/d/ITI-workspace/oop/lab7/bin/Debug/net8.0/lab7.dll
+/mnt/d/ITI-workspace/oop/lab7/bin/Debug/net8.0/lab7.pdb
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.AssemblyInfoInputs.cache
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.AssemblyInfo.cs
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.csproj.CoreCompileInputs.cache
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.dll
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/refint/lab7.dll
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.pdb
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/lab7.genruntimeconfig.cache
+/mnt/d/ITI-workspace/oop/lab7/obj/Debug/net8.0/ref/lab7.dll

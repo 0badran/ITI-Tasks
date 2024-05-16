@@ -1,0 +1,28 @@
+<nav class="bg-dark">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" routerLinkActive="active" (click)="openDialog()" routerLink="/Home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="/About">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="/Contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="/admin/insertProduct/0">Insert Product</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="register">Register</a>
+    </li>
+    <li class="nav-item ms-5" [hidden]="isLoggedIn">
+      <a class="btn btn-primary rounded-0" routerLink="/login">Login</a>
+    </li>
+    <li class="nav-item ms-5" [hidden]="!isLoggedIn">
+      <a class="btn btn-danger rounded-0" (click)="logOut()" routerLink="/login">Logout</a>
+    </li>
+    <li class="nav-item ms-5" [hidden]="!isLoggedIn">
+      <span class="text-light h4 ms-5">Welcome: {{userName | titlecase}}</span>
+    </li>
+  </ul>
+</nav>

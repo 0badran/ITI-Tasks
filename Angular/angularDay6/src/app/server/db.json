@@ -1,0 +1,41 @@
+{
+  "prodects": [
+    {
+      "id": "300",
+      "name": "Samsung Tablet",
+      "quantity": 12,
+      "price": 5000,
+      "imgUrl": "https://fakeimg.pl/200x100/",
+      "catId": "3",
+      "orderCount": 0
+    },
+    {
+      "id": "b6e7",
+      "name": "Relma",
+      "price": 123,
+      "quantity": 3,
+      "catId": "1"
+    },
+    {
+      "id": "8f73",
+      "name": "Iphone",
+      "price": 12,
+      "quantity": 10,
+      "catId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Mobiles"
+    },
+    {
+      "id": "2",
+      "name": "Laptop"
+    },
+    {
+      "id": "3",
+      "name": "Tablet"
+    }
+  ]
+}

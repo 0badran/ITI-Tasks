@@ -1,0 +1,12 @@
+.contanier{
+  background-color: #444;
+  color: #fff;
+  padding: 100px;
+  .line{
+    background-color: #fff;
+    width: 200px;
+    height: 2px;
+    margin:auto;
+  }
+
+}

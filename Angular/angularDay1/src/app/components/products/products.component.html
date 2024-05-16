@@ -1,0 +1,18 @@
+
+<!-- اعرضهم بس في الصفحه من خلال اللوب -->
+<section style="display: inline-block;">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="myProduct.img" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{myProduct.name}}</h5>
+          <p class="card-text">{{myProduct.price}}</p>
+          <p class="card-text"><small class="text-body-secondary">{{myProduct.quantity}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

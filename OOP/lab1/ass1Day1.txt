@@ -1,0 +1,16 @@
+1- write a program to print "Hello World"
+2- write a program to print area of circle 
+3- write a porgram to print + , - , / , * of 2 numbers 
+4. Get a number from a user & checking if it is Even Or Odd Or Zero using if ...else statement.
+
+5. Getting grade of a student as int, and printing it as char using if ...else statement:
+  90 and above      A
+  80 to 90          B
+  70 to 80          C
+  60 to 70          D
+  Below 60          F
+   
+6- update in problem no 3 , Take 2 numbers And Operator(+,/,-,*), then Print Result
+
+7-Write a program that takes three angles as input and determines whether the triangle is acute, obtuse, or right-angled.
+

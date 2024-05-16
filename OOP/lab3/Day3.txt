@@ -1,0 +1,6 @@
+
+
+1. Print simple menu again inside do while 
+* make struct of students and use it in switch 
+Functions Add , Edit , Delete , Display One  ,Display All in switch
+
